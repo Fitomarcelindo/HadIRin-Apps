@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.cinerec.Rec2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="@string/back"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Button Choose -->
+        <!-- Button Choose -->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="185dp"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/toggleButtonHappy"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/happy"
+                android:textOff="@string/happy"
+                android:textOn="@string/happy"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonSad"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/sad"
+                android:textOff="@string/sad"
+                android:textOn="@string/sad"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonAngry"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/angry"
+                android:textOff="@string/angry"
+                android:textOn="@string/angry"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonShock"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/shock"
+                android:textOff="@string/shock"
+                android:textOn="@string/shock"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="-8dp"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/toggleButtonTense"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/tense"
+                android:textOff="@string/tense"
+                android:textOn="@string/tense"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonBored"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/bored"
+                android:textOff="@string/bored"
+                android:textOn="@string/bored"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonNervous"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/nervous"
+                android:textOff="@string/nervous"
+                android:textOn="@string/nervous"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp"
+                tools:ignore="TextSizeCheck" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonCheerful"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/cheerful"
+                android:textOff="@string/cheerful"
+                android:textOn="@string/cheerful"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_marginTop="-8dp"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/toggleButtonCalm"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/calm"
+                android:textOff="@string/calm"
+                android:textOn="@string/calm"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonJoyful"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/joyful"
+                android:textOff="@string/joyful"
+                android:textOn="@string/joyful"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonRelaxed"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/relaxed"
+                android:textOff="@string/relaxed"
+                android:textOn="@string/relaxed"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonJealous"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/jealous"
+                android:textOff="@string/jealous"
+                android:textOn="@string/jealous"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_marginTop="-8dp"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/toggleButtonAmused"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/amused"
+                android:textOff="@string/amused"
+                android:textOn="@string/amused"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonWorried"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/worried"
+                android:textOff="@string/worried"
+                android:textOn="@string/worried"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonMotivated"
+                style="@style/GenreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/motivated"
+                android:textOff="@string/motivated"
+                android:textOn="@string/motivated"
+                android:textAllCaps="false"
+                android:textColor="@color/toggle_text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="143dp"
+            android:layout_above="@+id/buttonContinue"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="39dp"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:text="@string/recommendation"
+            android:textFontWeight="700"
+            android:textSize="23sp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/button_continue"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

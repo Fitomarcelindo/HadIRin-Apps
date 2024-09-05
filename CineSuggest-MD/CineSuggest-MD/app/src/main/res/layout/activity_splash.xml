@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".view.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/clapperboard" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:indeterminate="true"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:indeterminateTint="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/applogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/version_app"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
